@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/yanlis_arkaplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/dogru_arkaplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basari" />
+
+    <ImageView
+        android:id="@+id/dogru_arkaplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/basari_arkaplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yanlis_arkaplan"
+        app:srcCompat="@drawable/basari" />
+
+    <ImageView
+        android:id="@+id/basari_arkaplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_tekrar_dene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogru_arkaplan"
+        app:srcCompat="@drawable/basari" />
+
+    <ImageView
+        android:id="@+id/button_tekrar_dene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basari_arkaplan"
+        app:srcCompat="@drawable/yenidendenearkaplan" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_tekrar_dene"
+        app:layout_constraintStart_toStartOf="@+id/button_tekrar_dene"
+        app:layout_constraintTop_toTopOf="@+id/button_tekrar_dene"
+        app:srcCompat="@drawable/ic_yenidendeneikonu" />
+
+    <TextView
+        android:id="@+id/yeniden_dene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Yeniden Dene !"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_tekrar_dene"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/button_tekrar_dene" />
+
+    <TextView
+        android:id="@+id/yanlis_sayaci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yanlış:"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/yanlis_arkaplan"
+        app:layout_constraintEnd_toEndOf="@+id/yanlis_arkaplan"
+        app:layout_constraintStart_toStartOf="@+id/yanlis_arkaplan"
+        app:layout_constraintTop_toTopOf="@+id/yanlis_arkaplan" />
+
+    <TextView
+        android:id="@+id/dogru_sayaci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doğru:"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dogru_arkaplan"
+        app:layout_constraintEnd_toEndOf="@+id/dogru_arkaplan"
+        app:layout_constraintStart_toStartOf="@+id/dogru_arkaplan"
+        app:layout_constraintTop_toTopOf="@+id/dogru_arkaplan" />
+
+    <TextView
+        android:id="@+id/basari_yuzdesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="% 0 Başarı"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/basari_arkaplan"
+        app:layout_constraintEnd_toEndOf="@+id/basari_arkaplan"
+        app:layout_constraintStart_toStartOf="@+id/basari_arkaplan"
+        app:layout_constraintTop_toTopOf="@+id/basari_arkaplan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
